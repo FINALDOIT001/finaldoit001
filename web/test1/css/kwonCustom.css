@@ -1,0 +1,14 @@
+.kwon-thead1 {
+    background-color: lightgray;
+}
+.kwon-tr1 {
+    max-height: 5%;
+}
+/* 게시판에서 텍스트가 길어질 경우 ... 으로 줄어들게 해준다 */
+td, th {
+    text-overflow:ellipsis; overflow:hidden; white-space:nowrap;
+    max-width:50px;
+}
+#test1 {
+    border: black solid 2px;
+}
