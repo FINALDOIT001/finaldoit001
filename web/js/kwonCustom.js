@@ -17,6 +17,17 @@ jQuery(function($){
         
         //  "dom": '<"col-sm-6"r>t<"col-sm-6"f>p'
     });
+
+
+    $("#test2").DataTable({
+      lengthChange: false,
+      searching: false,
+      ordering: true,
+      info: true,
+      paging: true,
+
+  });
+
 });
 
 $(".td1").on({

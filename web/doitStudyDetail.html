@@ -10,8 +10,20 @@
    
    <link rel="stylesheet" href="css/bootstrap.min.css">
    <link rel="stylesheet" href="css/style.css">
+       <!-- Kwon CSS -->
+	   <link rel="stylesheet" href="css/kwonCustom.css">
+
+	<!-- 데이타테이블 CSS -->
+	<link rel="stylesheet" href="css/datatables.css">
+	
+
    <script src="js/jquery-1.12.1.min.js"></script>		 
    <script src="js/bootstrap.min.js"></script>
+
+   <!-- dataTables js -->
+	<script src="js/datatables.js"></script>
+	<!-- <script src="js/datatables-min.js"></script> -->
+	<script src="js/kwonCustom.js"></script>
 
    <style>
 	   .subject img{
@@ -169,7 +181,61 @@ https://secure.meetupstatic.com/photos/event/8/d/4/3/600_463536163.jpeg
 
 
 			</div>
-			<div class="tab-pane container fade" id="menu1">...asdfsadfasfsdfas</div>
+			<div class="tab-pane container fade" id="menu1">
+				<div id="kwon-inst01">
+					<div id="kwon-inst-btn01" class="btn btn-outline-success">모임 등록</div>
+				 </div>
+
+				<div>
+					현재 누르면 링크는 연결되어 있고 (# 처리로 이동은 X) console로 No만 찍히게 만들었습니다
+   
+					<table id="test2" class="table table-bordered">
+					   <thead class="kwon-thead2">
+							 <tr class="kwon-tr1">
+								<th width="10%" class="th1">모임일자</th>
+								<th width="10%" class="th1">시간</th>
+								<th width="10%" class="th1">지역</th>
+								<th width="10%" class="th1">장소</th>
+								<th width="10%" class="th1">카테고리</th>
+								<th width="10%" class="th1">모임명</th>
+								<th width="8%" class="th1">참석 인원</th>
+							 </tr>
+					   </thead>
+					   <tbody>
+							 <tr class="kwon-tr1">
+								<td class="kwon-td1" >2020.03.11</td>
+								<td class="kwon-td1" >PM 18:00</td>
+								<td class="kwon-td1 tdtitle1" >강남</td>
+								<td class="kwon-td1" >Test021</td>
+								<td class="kwon-td1" >사당역 부근</td>
+								<td class="kwon-td1" >2020.03.11</td>
+								<td class="kwon-td1" >0/10</td>
+							 </tr>
+							 <tr class="kwon-tr2">
+								<td class="kwon-td1" >00020</td>
+								<td class="kwon-td1" >자바</td>
+								<td class="kwon-td1 tdtitle1" >이펙티브 자바</td>
+								<td class="kwon-td1" >Test020</td>
+								<td class="kwon-td1" >강남</td>
+								<td class="kwon-td1" >2020.03.10</td>
+								<td class="kwon-td1" >8/10</td>
+							 </tr>
+							 <tr class="kwon-tr2">
+								<td class="kwon-td1" >00018</td>
+								<td class="kwon-td1" >스프링</td>
+								<td class="kwon-td1 tdtitle1" >토비의 스프링</td>
+								<td class="kwon-td1" >Test021</td>
+								<td class="kwon-td1" >사당역</td>
+								<td class="kwon-td1" >2020.03.10</td>
+								<td class="kwon-td1" >판매완료</td>
+							 </tr>
+					   </tbody>
+					</table>
+				 </div>
+
+
+
+			</div>
 			<div class="tab-pane container fade" id="menu2">
 
 				<div class="container">
