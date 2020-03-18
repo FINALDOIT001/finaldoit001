@@ -374,9 +374,9 @@ ul {
 /**************** extend css start ****************/
 /* line 29, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_extends.scss */
 .banner_part:after, .breadcrumb:after {
-  background: -webkit-linear-gradient(5deg, #f73347 0%, rgba(18, 1, 248, 0.2) 100%);
-  background: -webkit-linear-gradient(5deg, #f73347 0%, rgba(18, 1, 248, 0.2) 100%);
-  background: -ms-linear-gradient(5deg, #f73347 0%, rgba(18, 1, 248, 0.2) 100%);
+  background: -webkit-linear-gradient(5deg, #000 0%, rgba(18, 1, 248, 0) 100%);
+  background: -webkit-linear-gradient(5deg, #000 0%, rgba(18, 1, 248, 0) 100%);
+  background: -ms-linear-gradient(5deg, #000 0%, rgba(18, 1, 248, 0) 100%);
 }
 
 /**************** extend css start ****************/
@@ -5440,12 +5440,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* line 1249, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_blog.scss */
-.comment-form {
+/* .comment-form {
   border-top: 1px solid #eee;
   padding-top: 45px;
   margin-top: 50px;
   margin-bottom: 20px;
-}
+} */
 
 /* line 1257, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_blog.scss */
 .comment-form .form-group {
