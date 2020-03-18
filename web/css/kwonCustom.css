@@ -1,6 +1,9 @@
 .kwon-thead1 {
     background-color: lightgray;
 }
+.kwon-thead101 {
+    background-color: lightgray;
+}
 .kwon-tr1 {
     max-height: 5%;
 }
@@ -10,6 +13,7 @@
     text-overflow:ellipsis; overflow:hidden; white-space:nowrap;
     max-width:50px;
 }
+
 .tdtitle1:hover {
     color:red;
     font-weight: 900;
@@ -71,4 +75,31 @@
     margin-top: 1%;
     width: 1000px;
 
+}
+
+.kwon-btn101 {
+    margin:0 auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.kwon-area101 {
+    width:800px;
+    height: 400px;
+}
+
+.kwon-btn102 {
+    background-color: peru !important;
+    border-color: peru !important;
+}
+
+.kwon-section111 {
+    padding: 50px;
+}
+.btn-prev {
+    float: left;
+}
+
+.btn-next {
+    float: right;
 }
