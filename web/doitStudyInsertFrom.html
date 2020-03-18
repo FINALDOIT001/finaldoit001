@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <title>DoIt Suty List</title>
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="css/style.css">
+   <script src="js/jquery-1.12.1.min.js"></script>		 
+   <script src="js/bootstrap.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.16/dist/summernote-lite.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.16/dist/summernote-lite.min.js"></script>
+</head>
+
+<style>
+   .filebox label {
+    display: inline-block;
+    padding: .5em .75em;
+    color: #999;
+    font-size: inherit;
+    line-height: normal;
+    vertical-align: middle;
+    background-color: #fdfdfd;
+    cursor: pointer;
+    border: 1px solid #ebebeb;
+    border-bottom-color: #e2e2e2;
+    border-radius: .25em;
+    width:100%;
+    max-width:100%;
+}
+ 
+.filebox input[type="file"] {  /* 파일 필드 숨기기 */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip:rect(0,0,0,0);
+    border: 0;
+</style>
+
+<body>
+
+   
+   
+   
+
+   <!--::team part end::-->
+   <section class="about_part section-padding">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-6 col-md-6">
+               <div class="about_img">
+                  
+                  <div class="filebox">
+                     <label for="cma_file">사진 인증샷 업로드</label>
+                     <input type="file" name="cma_file" id="cma_file" accept="image/*" capture="camera" onchange="getThumbnailPrivew(this,$('#cma_image'))" />
+                     <br /><br />
+                     <div id="cma_image" style="width:100%;max-width:100%;border:1px solid #000;display:none;"></div>
+                 </div>
+                  
+               </div>
+            </div>
+            <div class="offset-lg-1 col-lg-5 col-sm-8 col-md-6">
+               <div class="about_text">
+                  <form action="" class="was-validated">
+                    
+                     <div class="row">
+                        <div class="col">
+                       <input type="text" class="form-control" placeholder="공부방 제목 입력" name="studytitle" required>
+                       <div class="valid-feedback">Valid.</div>
+                       <div class="invalid-feedback">공부방 제목 입역</div>
+                       <input type="text" class="form-control" vlaue="니돈먹튀" name="userId" hidden><!-- 방 개설 자 아이디 자동 입력 구간-->
+                        </div>
+                     </div>
+                     <br>
+
+
+                     <div class="row">
+                        <div class="col">
+                          <input type="number" class="form-control"  placeholder="모집 인원" name="pcount" required>
+                          <div class="valid-feedback">Valid.</div>
+                         <div class="invalid-feedback">모집 인원 설정</div>
+                        </div>
+                        <div class="col">
+                          <input type="date" class="form-control" placeholder="날짜 설정" name="stusydate" required>
+                          <div class="valid-feedback">Valid.</div>
+                          <div class="invalid-feedback">스터디 기간 설정</div>
+                        </div>
+                      </div>
+                      <br>
+
+                      <div class="row">
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="지역 입력" name="city" required>
+                          <div class="valid-feedback">Valid.</div>
+                         <div class="invalid-feedback">지역입력 예) 서울</div>
+                        </div>
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="장소 입력" name="place" required>
+                          <div class="valid-feedback">Valid.</div>
+                          <div class="invalid-feedback">장소입력 예) xxx커피집</div>
+                        </div>
+                      </div>
+                      <br>
+
+                      <div class="row">
+                        <div class="col">
+                          <input type="number" class="form-control" placeholder="보증금 입력" name="city" required>
+                          <div class="valid-feedback">Valid.</div>
+                         <div class="invalid-feedback">인당 보증급 설정</div>
+                        </div>
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="장소 입력" name="place" required>
+                          <div class="valid-feedback">Valid.</div>
+                          <div class="invalid-feedback">장소입력 예) xxx커피집</div>
+                        </div>
+                      </div>
+                      <br><br>
+
+
+
+                     <div class="form-group form-check">
+                       <label class="form-check-label">
+                         <input class="form-check-input" type="checkbox" name="remember" required> 수업 중간 참여 가능 여부 체크 해주세요.
+                         <div class="valid-feedback">Valid.</div>
+                         <div class="invalid-feedback">필수 </div>
+                       </label>
+                     </div>
+                     <br>
+
+                     <p>니가 입력한 내용 확인 다음에 확인 보톤을 눌러.<br>
+                         이제부터 니가 책임이 있다 이 방을 만들고 수업 방을 만듬.<br>
+                         고생길이 열 것 입니다.. </p>
+
+
+                     <br><br>
+                  </div>
+               </div>
+            </div>
+            <hr>
+            <div style="text-align: center;"><h1>About</h1></div>
+            <div id="summernote"></div>
+            <br>
+            <button class="btn btn-primary btn-block btn-danger">삭제</button>
+            <button class="btn btn-primary btn-block btn-dark">수정</button>
+            <button class="btn btn-primary btn-block btn-dark">등록</button>
+            
+         </form>
+         </div>
+      </div>
+   </section>
+   <script>
+              $('#summernote').summernote({
+                placeholder: '공부방 소개를 입력해 주세요',
+                tabsize: 2,
+                height: 600,
+                toolbar: [
+                  ['style', ['style']],
+                  ['font', ['bold', 'underline', 'clear']],
+                  ['color', ['color']],
+                  ['para', ['ul', 'ol', 'paragraph']],
+                  ['table', ['table']],
+                  ['insert', ['picture']],
+                  ['view', ['fullscreen', 'codeview', 'help']]
+                ]
+              });
+
+              var markupStr = $('#summernote').summernote('code');
+   </script>
+
+   <script>
+function getThumbnailPrivew(html, $target) {
+    if (html.files && html.files[0]) {
+        var reader = new FileReader();
+        reader.onload = function (e) {
+            $target.css('display', '');
+            //$target.css('background-image', 'url(\"' + e.target.result + '\")'); // 배경으로 지정시
+            $target.html('<img src="' + e.target.result + '" border="0" alt="" />');
+        }
+        reader.readAsDataURL(html.files[0]);
+    }
+}
+</script>
+ 
+</body>
+
+</html>
