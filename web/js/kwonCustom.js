@@ -17,6 +17,17 @@ jQuery(function($){
         
         //  "dom": '<"col-sm-6"r>t<"col-sm-6"f>p'
     });
+
+
+    $("#test2").DataTable({
+      lengthChange: false,
+      searching: false,
+      ordering: true,
+      info: true,
+      paging: true,
+
+  });
+
 });
 
 $(".td1").on({
@@ -28,16 +39,27 @@ $(".td1").on({
             });
     }
  });
- $(function selectOne(){
-    $(".kwon-td1").click(function(){
-       console.log($(this).parent().children().eq(0).text());
-       location.href="kwon_detailForm.html";
-       // var marketId = $(this).parent().children().eq(0).text();
-       // location.href="<%=request.getContextPath()%>/selectMarketOne.ad?marketId=" + marketId;
-       location.href="#";
-       
-    });
- });
+$(function selectOne(){
+   $(".kwon-td1").click(function(){
+      console.log($(this).parent().children().eq(0).text());
+      location.href="kwon_detailForm.html";
+      // var marketId = $(this).parent().children().eq(0).text();
+      // location.href="<%=request.getContextPath()%>/selectMarketOne.ad?marketId=" + marketId;
+      location.href="#";
+      
+   });
+});
+
+$(function selectOne(){
+   $(".kwon-td101").click(function(){
+      console.log($(this).parent().children().eq(0).text());
+      location.href="doitStudy_Schedule.html";
+      // var marketId = $(this).parent().children().eq(0).text();
+      // location.href="<%=request.getContextPath()%>/selectMarketOne.ad?marketId=" + marketId;
+      location.href="#";
+      
+   });
+});
 
  /* required 체크해서 필수항목이 없을 경우 return false로 submit 막아주는 기능 */
 //  function manualValidate(ev) {
