@@ -44,9 +44,7 @@ $(function selectOne(){
       console.log($(this).parent().children().eq(0).text());
       location.href="kwon_detailForm.html";
       // var marketId = $(this).parent().children().eq(0).text();
-      // location.href="<%=request.getContextPath()%>/selectMarketOne.ad?marketId=" + marketId;
-      location.href="#";
-      
+      // location.href="<%=request.getContextPath()%>/selectMarketOne.ad?marketId=" + marketId;      
    });
 });
 
@@ -56,8 +54,6 @@ $(function selectOne(){
       location.href="doitStudy_Schedule.html";
       // var marketId = $(this).parent().children().eq(0).text();
       // location.href="<%=request.getContextPath()%>/selectMarketOne.ad?marketId=" + marketId;
-      location.href="#";
-      
    });
 });
 
