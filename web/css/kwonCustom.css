@@ -74,7 +74,6 @@
     margin: 5%;
     margin-top: 1%;
     width: 1000px;
-
 }
 
 .kwon-btn101 {
@@ -83,11 +82,10 @@
     margin-bottom: 10px;
 }
 
-.kwon-area101 {
+.kwon-area101 .kwon-area102{
     width:800px;
     height: 400px;
 }
-
 .kwon-btn102 {
     background-color: peru !important;
     border-color: peru !important;
@@ -95,6 +93,8 @@
 
 .kwon-section111 {
     padding: 50px;
+    padding-bottom: 100px;
+    border-bottom: 1px solid gray;
 }
 .kwon-span-prev001 {
     float: left;
