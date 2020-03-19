@@ -16,15 +16,13 @@
 <style>
 
 
-li {
+.jh_li {
 	margin: 0 0 0 0;
     padding: 0 20px 0 0;
     border : 1px;
     float: left;
 }
-span{
-	font-weight: bold;
-}
+
 
 .pagecenter {
  width: 100%;
@@ -36,7 +34,69 @@ span{
 </style>
 
 <body>
-
+	<!--::menu part start::-->
+	<header class="main_menu home_menu">
+		<div class="container">
+		   <div class="row">
+			  <div class="col-lg-12">
+				 <nav class="navbar navbar-expand-lg navbar-light">
+					<a class="navbar-brand" href="index.html"> <img src="img/logo.png" alt="logo"> </a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+					   aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					   <span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse main-menu-item" id="navbarNav">
+					   <ul class="navbar-nav">
+						  <li class="nav-item active">
+							 <a class="nav-link" href="index.html">Home</a>
+						  </li>
+						  <li class="nav-item">
+							 <a class="nav-link" href="about.html">about</a>
+						  </li>
+						  <li class="nav-item">
+							 <a class="nav-link" href="services.html">Services</a>
+						  </li>
+						  <li class="nav-item dropdown">
+							 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								blog
+							 </a>
+							 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="blog.html">blog</a>
+								<a class="dropdown-item" href="single-blog.html">Single blog</a>
+							 </div>
+						  </li>
+						  <li class="nav-item dropdown">
+							 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								pages
+							 </a>
+							 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="project.html">Project</a>
+								<a class="dropdown-item" href="apartment.html">Apartment</a>
+								<a class="dropdown-item" href="elements.html">Elements</a>
+							 </div>
+						  </li>
+						  <li class="nav-item">
+							 <a class="nav-link" href="contact.html">Contact us</a>
+						  </li>
+						  <li class="nav-item">
+							 <a class="nav-link" href="#"></a>
+						  </li>
+						 <li class="nav-item">
+							 <a class="nav-link" href="hyerim_login.html">LOGIN</a>
+						  </li>
+						  <li class="nav-item">
+							 <a class="nav-link" href="hyerim_join.html">JOIN</a>
+						  </li>
+					   </ul>
+					</div>
+				 </nav>
+			  </div>
+		   </div>
+		</div>
+	 </header>
+	 <!--::menu part end::-->
   
 
    <!--::breadcrumb part start::-->
@@ -86,121 +146,35 @@ span{
 	</div>
 	
 	<br>
-	<div class="whole-wrap" onclick="location.href='doitStudyDetail.html';">
+	<div class="whole-wrap" >
 		<div class="container box_1170">
-			<div class="section-top-border" style="padding: 5px 0;">
 				
 				<div class="row">
-					<div class="col-md-2">
+					<div class="col-md-2" onclick="location.href='doitStudyDetail.html';">
 						<img src="img/elements/d.jpg" alt="" class="rounded">
 					</div>
 					<div class="col-md-9 mt-sm-20">
-						<h2 class="mb-1">Do You Know JAVA Code?</h2>
-						<h4 class="mb-1"> JAVA </h4>
+						<h3 onclick="location.href='doitStudyDetail.html';">Do You Know JAVA Code?</h3>
+							<h4 class="mb-1" style="color: gray;"><img src="img/book.png" style="width: 20px; height: auto;"> JAVA </h4>
 						<h4 class="mb-1 text-primary">모집중</h4>
 						
 
 						<ul>
-							<li hidden>select on number</li>
-							<li><span>팀장:</span>&nbsp; WTF</li>
-							<li><span>모임일자:</span>&nbsp; 1985.01.01</li>
-							<li><span>지역:</span>&nbsp; 서울</li>
-							<li><span>장소:</span>&nbsp; KH Academy</li>
-							<li><span>모집인원:</span>&nbsp;20/10</li>
+							<li hidden class="jh_li">select on number</li>
+							<li class="jh_li"><span>팀장:</span>&nbsp; WTF</li>
+							<li class="jh_li"><span>모임일자:</span>&nbsp; 1985.01.01</li>
+							<li class="jh_li"><span>지역:</span>&nbsp; 서울</li>
+							<li class="jh_li"><span>장소:</span>&nbsp; KH Academy</li>
+							<li class="jh_li"><span>모집인원:</span>&nbsp;20/10</li>
 							
 						</ul>
 					</div>
 				</div>
-			</div>
+				<hr>
 		</div>
 	</div>
 	<br>
-	<div class="whole-wrap" onclick="location.href='doitStudyDetail.html';">
-		<div class="container box_1170">
-			<div class="section-top-border" style="padding: 5px 0;">
-				
-				<div class="row">
-					<div class="col-md-2">
-						<img src="img/elements/d.jpg" alt="" class="rounded">
-					</div>
-					<div class="col-md-9 mt-sm-20">
-						<h2 class="mb-1">Do You Know JAVA Code?</h2>
-						<h4 class="mb-1"> JAVA </h4>
-						<h4 class="mb-1 text-primary">모집중</h4>
-						
-
-						<ul>
-							<li hidden>select on number</li>
-							<li><span>팀장:</span>&nbsp; WTF</li>
-							<li><span>모임일자:</span>&nbsp; 1985.01.01</li>
-							<li><span>지역:</span>&nbsp; 서울</li>
-							<li><span>장소:</span>&nbsp; KH Academy</li>
-							<li><span>모집인원:</span>&nbsp;20/10</li>
-							
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<br>
-	<div class="whole-wrap" onclick="location.href='doitStudyDetail.html';">
-		<div class="container box_1170">
-			<div class="section-top-border" style="padding: 5px 0;">
-				
-				<div class="row">
-					<div class="col-md-2">
-						<img src="img/elements/d.jpg" alt="" class="rounded">
-					</div>
-					<div class="col-md-9 mt-sm-20">
-						<h2 class="mb-1">Do You Know JAVA Code?</h2>
-						<h4 class="mb-1"> JAVA </h4>
-						<h4 class="mb-1 text-primary">모집중</h4>
-						
-
-						<ul>
-							<li hidden>select on number</li>
-							<li><span>팀장:</span>&nbsp; WTF</li>
-							<li><span>모임일자:</span>&nbsp; 1985.01.01</li>
-							<li><span>지역:</span>&nbsp; 서울</li>
-							<li><span>장소:</span>&nbsp; KH Academy</li>
-							<li><span>모집인원:</span>&nbsp;20/10</li>
-							
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<br>
-	<div class="whole-wrap" onclick="location.href='doitStudyDetail.html';">
-		<div class="container box_1170">
-			<div class="section-top-border" style="padding: 5px 0;">
-				
-				<div class="row">
-					<div class="col-md-2">
-						<img src="img/elements/d.jpg" alt="" class="rounded">
-					</div>
-					<div class="col-md-9 mt-sm-20">
-						<h2 class="mb-1">Do You Know JAVA Code?</h2>
-						<h4 class="mb-1"> JAVA </h4>
-						<h4 class="mb-1 text-danger">모집완료</h4>
-						
-
-						<ul>
-							<li hidden>select on number</li>
-							<li><span>팀장:</span>&nbsp; WTF</li>
-							<li><span>모임일자:</span>&nbsp; 1985.01.01</li>
-							<li><span>지역:</span>&nbsp; 서울</li>
-							<li><span>장소:</span>&nbsp; KH Academy</li>
-							<li><span>모집인원:</span>&nbsp;20/20</li>
-							
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+	
 	
 
 	<br><br>

@@ -25,36 +25,13 @@
         <link rel="stylesheet" href="css/style.css">
         <!-- hyerim CSS -->
         <link rel="stylesheet" href="css/hyerim.css">
-         <!-- style CSS -->
-   <link rel="stylesheet" href="css/style.css">
    <!-- font css -->
    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
    <style>
       * {
          font-family: 'Noto Sans KR', sans-serif;
       }
-      .hyerim_div{
-         width: 555px;
-      }
-   .filebox label {
-    display: inline-block;
-    background-image: url("img/user.png");
-    background-size: 60px;
-    cursor: pointer;
-    width: 60px;
-    height: 60px;
-}
- 
-.filebox input[type="file"] {  /* 파일 필드 숨기기 */
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip:rect(0,0,0,0);
-    border: 0;
-   }
+  
    </style>
 </head>
       
@@ -86,10 +63,7 @@
                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                    blog
                                 </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                   <a class="dropdown-item" href="blog.html">blog</a>
-                                   <a class="dropdown-item" href="single-blog.html">Single blog</a>
-                                </div>
+                                
                              </li>
                              <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -125,112 +99,63 @@
 
 	
 
-    <!-- Nav tabs -->
-    <div style="margin-top: 130px;"></div> 
-    <div class="container" style="margin-bottom: 100px;">
-      <section class="about_part">
-            <div class="row">
-               <div class="section_tittle">
-                  <h2><span>마이</span>페이지</h2>
+    <!--::breadcrumb part start::-->
+   <section class="breadcrumb blog_bg">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-12">
+               <div class="breadcrumb_iner">
+                  <div class="breadcrumb_iner_item">
+                     <h2>Do It Study</h2>
+                  </div>
                </div>
             </div>
-      </section>
-        <ul class="nav nav-tabs">
-            <li class="nav-item">
-              <a class="nav-link active" style="width: 200px; text-align: center;" data-toggle="tab" href="#home">내 정보 수정</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" style="width: 200px; text-align: center;" data-toggle="tab" href="#menu1">위시리스트</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" style="width: 200px; text-align: center;" data-toggle="tab" href="#menu2">나의 스터디</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" style="width: 200px; text-align: center;" data-toggle="tab" href="#menu3">작성 글 내역</a>
-              </li>
-          </ul>
-          
-          <!-- Tab panes -->
-          <div class="tab-content">
-            <!-- tab1 start-->
-            <div class="tab-pane container active" id="home">
-                <form class="user" id="joinForm" action="#" method="post">
-                    <div class="col-lg-6" style="margin: auto; margin-top: 50px;">
-                        <table>
-                            <tr>
-                                
-                            </tr>
-                        </table>
+         </div>
+      </div>
+   </section>
+   <!--::breadcrumb part start::-->
+   <!-- ================ contact section start ================= -->
+  <section class="contact-section area-padding">
+   <div class="container">
+     <div class="row">
+        
+          <div class="col-lg-3" style="float:left; margin-right: 30px;">
+               <div class="blog_right_sidebar_h" style="width: 300px;">
+                  <aside class="single_sidebar_widget search_widget">
+                     <form action="#">
                         <div class="form-group">
-                           <label><span style="color:red">*</span> 아이디</label>
-                           <input type="text" class="form-control hide-on-focus" id="userid" value="ggghr" readonly>
-                     </div>
-                     <div class="form-group"> 
-                        <label><span style="color:red">*</span> 비밀번호</label>
-                        <input type="password" class="form-control form-control-user" id="userPwd1" name="userPwd1" required>
-                     </div>
-                     <div class="form-group"> 
-                        <label><span style="color:red">*</span> 비밀번호 확인</label>
-                        <input type="password" class="form-control form-control-user" id="userPwd2" name="userPwd2" required>
-                        <label style="font-size: 12px; color:red">비밀번호가 일치하지 않습니다.</label>
-                     </div>
-
-                     <div class="form-group"> 
-                        <label>내 이미지<span style="font-size: x-small;">(이미지를 클릭해주세요)</span></label>
-                        <div>
-                           <div class="about_img">
-                              <div class="filebox">
-                                 <label for="cma_file" id="imglabel" class="rounded-circle" alt="Cinque Terre">
-                                    <input type="file" name="cma_file" id="cma_file" accept="image/*" capture="camera" onchange="getThumbnailPrivew(this,$('#cma_image'))" />
-                                    <div id="cma_image" style="display:none;" ></div>
-                                 </label>
-                             </div>
-                              
+                           <div class="input-group mb-3">
+                              <input type="text" class="form-control placeholder hide-on-focus" placeholder="스터디 이름을 검색하세요.">
+                              <div class="input-group-append">
+                                 <button class="btn" type="button"><i class="ti-search"></i></button>
+                              </div>
                            </div>
                         </div>
-                     </div>
-                     <div class="form-group"> 
-                        <label><span style="color:red">*</span> 이름</label>
-                        <input type="text" class="form-control form-control-user" id="name" name="name" placeholder="이름" required>
-                     </div>
-                     
-                     <div class="form-group"> 
-                        <label style="display: block;"><span style="color:red">*</span> 전화번호</label>
-                        <input type="text" style="display: inline; width: 119px;" class="form-control form-control-user" id="phone1" name="phone1" required>
-                        <label style="font-weight: 600; margin-left: 5px; margin-right: 5px;">-</label>
-                        <input type="text" style="display: inline; width: 119px;" class="form-control form-control-user" id="phone2" name="phone2" required>
-                        <label style="font-weight: 600; margin-left: 5px; margin-right: 5px;">-</label>
-                        <input type="text" style="display: inline; width: 119px;" class="form-control form-control-user" id="phone3" name="phone3" required>
-                     </div>
-                     <div class="form-group"> 
-                        <label style="display: block;"><span style="color:red">*</span> 이메일</label>
-                        <input type="text" style="display: inline; width: 280px;" class="form-control form-control-user" id="email" name="email" placeholder="이메일" required>
-                        <label style="font-weight: 600; ">@</label>   
-                        <select style="width: 160px; display: inline;" class="form-control">
-                           <option value="1">naver.com</option>
-                           <option value="2">daum.net</option>
-                           <option value="3">gmail.com</option>
-                        </select>
-                     </div>
-                     <div class="form-group" style="margin-bottom: 50px;"> 
-                        <label style="display: block;"><span style="color:red">*</span> 주소</label>
-                        <input type="text" style="width: 253px; display: inline;" class="form-control form-control-user" id="address" name="address" required>
-                        <a href="#" style="width:140px; font-weight: 400; margin-left: 3px; margin-bottom: 5px;" class="btn btn-dark" >우편번호 찾기</a>
-                        <input type="text" style="margin-bottom: 5px;" class="form-control form-control-user" id="address2" name="address2" required>
-                        <input type="text" class="form-control form-control-user" id="address3" name="address3" placeholder="상세주소 입력" required>
-                     </div>
-                     <div class="hyerim_div" style="text-align: center;">
-                           <input type="reset" class="btn btn-outline-danger" style="font-weight: 400; width: 180px; margin-right: 10px;" value="취소하기" />
-                           <a href="#" class="btn btn-dark" style="font-weight: 400; width: 180px;">
-                              수정하기
-                             </a>                     
-                     </div>
-                  </div>
-               </form>
-            </div>
-            <!-- tab1 end -->
-            <!-- tab2 start -->
-            <div class="tab-pane container fade" id="menu1" style="margin-top: 20px;">
+                     </form>
+                  </aside>
+               </div>
+          </div>
+          <div class="col-lg-4">
+            <button type="button" class="btn btn-block btn-light btn-filter dropdown-toggle" style="width: 80px; height: 50px;" data-toggle="dropdown" aria-expanded="false">태그</button>
+            <div class="dropdown-menu">
+               <label class="dropdown-item_h" href="#" style="display: inline;"><input type="checkbox" class="form-check-input" value="">Java</label>
+               <label class="dropdown-item_h" href="#" style="display: inline;"><input type="checkbox" class="form-check-input" value="">HTML</label>
+               <label class="dropdown-item_h" href="#" style="display: inline;"><input type="checkbox" class="form-check-input" value="">C+</label>
+               <label class="dropdown-item_h" href="#" style="display: inline;"><input type="checkbox" class="form-check-input" value="">Spring</label>
+               <label class="dropdown-item_h" href="#" style="display: inline;"><input type="checkbox" class="form-check-input" value="">Spring</label>
+               <label class="dropdown-item_h" href="#" style="display: inline;"><input type="checkbox" class="form-check-input" value="">Spring</label>
+               <label class="dropdown-item_h" href="#" style="display: inline;"><input type="checkbox" class="form-check-input" value="">Spring</label>
+               <label class="dropdown-item_h" href="#" style="display: inline;"><input type="checkbox" class="form-check-input" value="">Spring</label>
+               <label class="dropdown-item_h" href="#" style="display: inline;"><input type="checkbox" class="form-check-input" value="">Spring</label>
+               <label class="dropdown-item_h" href="#" style="display: inline;"><input type="checkbox" class="form-check-input" value="">Spring</label>
+             </div>
+         </div>
+          <div class="col-lg-4">
+            <input type="button" class="genric-btn danger" style="float:right; width: 120px;" value="스터디 개설" />
+          </div>
+          <div class="col-lg-12" style="margin-top: 20px;">
+             <label style="font-weight: bold;"><span style="font-size: large;">87</span>개의 스터디</label>
+             <hr>
                <div class="row">
                   <!-- study list start -->
                   <div class="col-md-2" style="text-align: center;">
@@ -280,27 +205,37 @@
                      <hr>
                   </div>
                   <!-- study list end -->
+
+                  <!-- paging start -->
+                  <nav class="col-md-12 blog-pagination_h justify-content-center d-flex">
+                     <ul class="pagination">
+                        <li class="page-item">
+                           <a href="#" class="page-link" aria-label="Previous">
+                              <span aria-hidden="true">
+                                 <span>〈</span>
+                              </span>
+                           </a>
+                        </li>
+                        <li class="page-item"><a href="#" class="page-link">01</a></li>
+                        <li class="page-item active"><a href="#" class="page-link">02</a></li>
+                        <li class="page-item"><a href="#" class="page-link">03</a></li>
+                        <li class="page-item"><a href="#" class="page-link">04</a></li>
+                        <li class="page-item"><a href="#" class="page-link">05</a></li>
+                        <li class="page-item">
+                           <a href="#" class="page-link" aria-label="Next">
+                              <span aria-hidden="true">
+                                <span>〉</span>
+                              </span>
+                           </a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <!-- paging end-->
                </div>
-
-            </div>
-            <!-- tab2 end -->
-            <div class="tab-pane container fade" id="menu2">...</div>
-            <div class="tab-pane container fade" id="menu3">...</div>
-          </div>
-
-
-    </div>
-
-
-    <script>
-       
-
-  
-      </script>
-      <!--tap end-->
-
-
-    <!--end tab area-->
+     </div>
+   </div>
+ </section>
+ <!-- ================ contact section end ================= -->
 
 
    <!--::footer_part start::-->
