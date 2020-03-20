@@ -23,7 +23,7 @@ jQuery(function($){
       lengthChange: false,
       searching: false,
       ordering: true,
-      info: true,
+      info: false,
       paging: true,
 
   });

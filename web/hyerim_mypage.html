@@ -27,6 +27,9 @@
         <link rel="stylesheet" href="css/hyerim.css">
          <!-- style CSS -->
    <link rel="stylesheet" href="css/style.css">
+   <!-- hyun CSS -->
+   <link rel="stylesheet" href="css/hyun.css">
+   
    <!-- font css -->
    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
    <style>
@@ -55,6 +58,17 @@
     clip:rect(0,0,0,0);
     border: 0;
    }
+     /* 별점 */
+     .starR{
+  background: url(img/like_icon.png) no-repeat right 0;
+  background-size: auto 94%;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  text-indent: -9999px;
+  cursor: pointer;
+}
+.starR.on{background-position:0 0;}
    </style>
 </head>
       
@@ -230,14 +244,18 @@
             </div>
             <!-- tab1 end -->
             <!-- tab2 start -->
-            <div class="tab-pane container fade" id="menu1" style="margin-top: 20px;">
-               <div class="row">
+            <div class="tab-pane container fade" id="menu1">
+               <div class="row" style="padding: 20px;">
                   <!-- study list start -->
                   <div class="col-md-2" style="text-align: center;">
                      <img src="img/project-5.png" class="rounded" alt="Cinque Terre" style="width: 90px; height: 90px;">
                   </div>
                   <div class="col-md-9 mt-sm-20">
-                     <a href="doitStudyDetail.html" style="display: block;"><label style="font-size: x-large; font-weight: bold;">JAVA 스터디 그룹</label></a>
+                     <a href="doitStudyDetail.html" style="display: block;"><label style="font-size: x-large; font-weight: bold;">JAVA 스터디 그룹</label>
+                        <div class="starRev" style="width: 60px; display:inline;">
+                           <span class="starR on" style="margin-left: 20px; width: 20px; height: 20px;"></span> 
+                        </div>
+                     </a>
                      <h5 class="mb-1 text-primary" style="font-weight: bold;">모집 중</h5>
                      <ul class="study_ul">
                         <li class="study_li">조장 : 박정호</li>
@@ -251,48 +269,147 @@
                         <li class="study_tag">스터디그룹</li>
                         
                      </ul>
+
                   </div>
+
                   <div class="col-lg-12">
                      <hr>
                   </div>
                   <!-- study list end -->
-                  <!-- study list start -->
-                  <div class="col-md-2" style="text-align: center;">
-                     <img src="img/project-5.png" class="rounded" alt="Cinque Terre" style="width: 90px; height: 90px;">
+                                    <!-- study list start -->
+                                    <div class="col-md-2" style="text-align: center;">
+                                       <img src="img/project-5.png" class="rounded" alt="Cinque Terre" style="width: 90px; height: 90px;">
+                                    </div>
+                                    <div class="col-md-9 mt-sm-20">
+                                       <a href="doitStudyDetail.html" style="display: block;"><label style="font-size: x-large; font-weight: bold;">JAVA 스터디 그룹</label>
+                                          <div class="starRev" style="width: 60px; display:inline;">
+                                             <span class="starR on" style="margin-left: 20px; width: 20px; height: 20px;"></span> 
+                                          </div>
+                                       </a>
+                                       <h5 class="mb-1 text-primary" style="font-weight: bold;">모집 중</h5>
+                                       <ul class="study_ul">
+                                          <li class="study_li">조장 : 박정호</li>
+                                          <li class="study_li"><img src="img/user_icon2.png">3/8</li>
+                                          <li class="study_li"><img src="img/add_icon2.png">서울시 강남구</li>
+                                          <li class="study_li"><img src="img/money_icon3.png">20,000</li>
+                                       </ul>
+                                       <ul class="study_">
+                                          <li class="study_tag">Java</li>
+                                          <li class="study_tag">오프라인</li>
+                                          <li class="study_tag">스터디그룹</li>
+                                          
+                                       </ul>
+                  
+                                    </div>
+                  
+                                    <div class="col-lg-12">
+                                       <hr>
+                                    </div>
+                                    <!-- study list end -->
                   </div>
-                  <div class="col-md-9 mt-sm-20">
-                     <a href="doitStudyDetail.html" style="display: block;"><label style="font-size: x-large; font-weight: bold;">JAVA 스터디 그룹</label></a>
-                     <h5 class="mb-1 text-primary" style="font-weight: bold;">모집 중</h5>
-                     <ul class="study_ul">
-                        <li class="study_li">조장 : 박정호</li>
-                        <li class="study_li"><img src="img/user_icon2.png">3/8</li>
-                        <li class="study_li"><img src="img/add_icon2.png">서울시 강남구</li>
-                        <li class="study_li"><img src="img/money_icon3.png">20,000</li>
-                     </ul>
-                     <ul class="study_">
-                        <li class="study_tag">Java</li>
-                        <li class="study_tag">오프라인</li>
-                        <li class="study_tag">스터디그룹</li>
-                        
-                     </ul>
-                  </div>
-                  <div class="col-lg-12">
-                     <hr>
-                  </div>
-                  <!-- study list end -->
+                  
                </div>
+               <!-- tab2 end -->
+               <!-- tab3 start -->
+               <div class="tab-pane container fade" id="menu2">
+                  <div class="row" style="padding: 20px;">
+                     <!-- study list start -->
+                        <div class="col-md-2" style="text-align: center;">
+                           <img src="img/project-5.png" class="rounded" alt="Cinque Terre" style="width: 90px; height: 90px;">
+                        </div>
+                        <div class="col-md-9 mt-sm-20">
+                           <a href="doitStudyDetail.html" style="display: block;"><label style="font-size: x-large; font-weight: bold;">JAVA 스터디 그룹</label>
+                              <div class="starRev" style="width: 60px; display:inline;">
+                                 <span class="starR on" style="margin-left: 20px; width: 20px; height: 20px;"></span> 
+                              </div>
+                           </a>
+                           <h5 class="mb-1 text-primary" style="font-weight: bold;">모집 중</h5>
+                           <ul class="study_ul">
+                              <li class="study_li">조장 : 박정호</li>
+                              <li class="study_li"><img src="img/user_icon2.png">3/8</li>
+                              <li class="study_li"><img src="img/add_icon2.png">서울시 강남구</li>
+                              <li class="study_li"><img src="img/money_icon3.png">20,000</li>
+                           </ul>
+                           <ul class="study_">
+                              <li class="study_tag">Java</li>
+                              <li class="study_tag">오프라인</li>
+                              <li class="study_tag">스터디그룹</li>
+                              
+                           </ul>
+   
+                        </div>
 
+                        <div class="col-lg-12">
+                           <hr>
+                        </div>
+                        <!-- study list end -->
+
+                     </div>
+               </div>
+               <!-- tab3 end -->
+               <div class="tab-pane container fade" id="menu3">
+                  <div class="card" style="margin-top: 20px;">
+                     <!-- /.card-header -->
+                     <div class="card-body table-responsive p-0">
+                       <table class="table table-hover hyun_table01">
+                         <thead>
+                           <tr>
+                             <th>번호</th>
+                             <th>제목</th>
+                             <th>작성자</th>
+                             <th>작성일</th>
+                             <th>조회수</th>
+                           </tr>
+                         </thead>
+                         <tbody>
+                           <tr>
+                             <td>5</td>
+                             <td>admin</td>
+                             <td><a href="hyun_notice_view.html">공지입니당5</a></td>
+                             <td>2020-01-19</td>
+                             <td>10</td>
+                           </tr>
+                           <tr>
+                               <td>4</td>
+                               <td>admin</td>
+                               <td>공지입니다4</td>
+                               <td>2020-01-13</td>
+                               <td>8</td>
+                           </tr>
+                           <tr>
+                               <td>3</td>
+                               <td>admin</td>
+                               <td>공지입니다3</td>
+                               <td>2020-01-12</td>
+                               <td>76</td>
+                           </tr>							
+                           <tr>
+                               <td>2</td>
+                               <td>admin</td>
+                               <td>공지입니다2</td>
+                               <td>2020-01-04</td>
+                               <td>32</td>
+                           </tr>							
+                           <tr>
+                               <td>1</td>
+                               <td>admin</td>
+                               <td>공지입니다1</td>
+                               <td>2020-01-01</td>
+                               <td>5</td>
+                           </tr>
+                         </tbody>
+                       </table>
+                     </div>
+                     <!-- /.card-body -->
+                  </div>
+               </div>
             </div>
-            <!-- tab2 end -->
-            <div class="tab-pane container fade" id="menu2">...</div>
-            <div class="tab-pane container fade" id="menu3">...</div>
-          </div>
-
-
-    </div>
-
-
-    <script>
+            
+            
+         </div>
+         
+         
+         <script>
        
 
   
@@ -383,6 +500,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
  </footer>
  <!--::footer_part end::-->
 
+
  <!-- jquery plugins here-->
  <script src="js/jquery-1.12.1.min.js"></script>
  <!-- popper js -->
@@ -426,6 +544,31 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
        }
    }
    </script>
+
+
+<script>
+   /*** 별점 ****************************************************/
+   $('div.starRev').children('span').click(function(){
+      
+    $(this).toggleClass("on");
+    star = $('div.starRev').children('span.starR.on').length;
+    /*
+      var star = 0;
+    if(star == 0){
+       $(this).addClass('on').prevAll('span').addClass('on');
+       star = $('div.starRev').children('span.starR.on').length;
+       
+    }else{
+       $('div.starRev').children('span').className = "starR"; 
+       star = 0;
+    } */
+    
+   return false;
+ });
+
+
+
+</script>
 </body>
 
 </html>
