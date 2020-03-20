@@ -1,5 +1,5 @@
 .kwon-thead1 {
-    background-color: lightgray;
+    background-color: rgb(243, 243, 243);
 }
 .kwon-thead101 {
     background-color: lightgray;
@@ -30,7 +30,7 @@
     width: auto;
     text-align: center;
     font-weight: bold;
-    font-size: large;
+    font-size: 15px;
     text-align: right;
     padding-right: 30px;
 }
@@ -38,7 +38,7 @@
     width: 200px;
 }
 #kwon-submit01, #kwon-reset01, #kwon-btn02, #kwon-back01, #kwon-back02 {
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 .td-img01 {

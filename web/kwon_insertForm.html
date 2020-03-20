@@ -5,7 +5,7 @@
    <!-- Required meta tags -->
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-   <title>Real_state || About</title>
+   <title>Book Insert</title>
    <!-- Required meta tags -->
    <link rel="icon" href="img/favicon.png">
    <!-- Bootstrap CSS -->
@@ -43,7 +43,7 @@
          <div class="row">
             <div class="col-lg-12">
                <nav class="navbar navbar-expand-lg navbar-light">
-                  <a class="navbar-brand" href="index.html"> <img src="img/logo.png" alt="logo"> </a>
+                  <a class="navbar-brand" href="index.html"> <img src="img/doit_logo.png" alt="logo"> </a>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                      <span class="navbar-toggler-icon"></span>
@@ -104,7 +104,7 @@
    <!--::menu part end::-->
 
    <!--::project part start::-->
-   <section class="portfolio_area section-padding ">
+   <section class="about_part section-padding ">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -115,38 +115,31 @@
                     <input type="hidden" name="userId" value="">
                     <input type="hidden" name="userName" value="">
                     <table border="1" class="kwon-table1" cellpadding="10px">
+                        
                         <tr>
-                            <td colspan="1">
-                                <select name="category" style="text-align: right;" required>
+                            <td class="th02">*지역</td>
+                            <td colspan="2"><input type="text" name="location" required></td>
+                            <td class="th02">*분류</td>
+                            <td colspan="3">
+                                 <select name="category" style="text-align: right;" required>
                                     <option value="">category</option>
                                     <option value="JAVA">JAVA</option>
                                     <option value="JavaScript">JavaScript</option>
-                                    <option value="Pyhton">파이썬</option>
+                                    <option value="Pyhton">파이썬</option>     
                                     <option value="Spring">스프링</option>
                                     <option value="C-like">C-like 계열</option>
                                     <option value="HTML">HTML</option>
                                     <option value="기타">기타</option>
                                 </select> 
                             </td>
-                            <td class="th02" colspan="2">*제목</td>
-                            <td class="td02" colspan="3"><input type="text" name="title" class="tdin02" required></td>
                         </tr>
+                        
                         <tr>
-                            <td class="th02">*지역</td>
-                            <td colspan="2"><input type="text" name="location" required></td>
-                            <td class="th02 th03" colspan="1">그 외</td>
-                            <td colspan="2"><input type="text" name="#" placeholder="넣을거"></td>
-                        </tr>
-                        <tr>
-                            <td class="th02">그 외</td>
-                            <td colspan="2"><input type="text" name="#" placeholder="넣을거"></td>
-                            <td class="th02 th03" colspan="1">그 외</td>
-                            <td colspan="2"><input type="text" name="#" placeholder="넣을거"></td>
-                        </tr>
-                        <tr>
-                            <td colspan="2" class="th02">사진 추가</td>
-                            <td colspan="4"><input type="file" name="file"></td>
-                        </tr>
+                           <td colspan="1" class="th02">사진 추가</td>
+                           <td colspan="4"><input type="file" name="file"></td>
+                       </tr>
+                        <td class="th02" colspan="1">*제목</td>
+                        <td class="td02" colspan="4"><input type="text" name="title" class="tdin02" required></td>
                         
                     </table>
                     <div id="kwon-area1">
@@ -154,10 +147,9 @@
                     </div>
         
                     <div style="text-align:center;">
-
-                        <input type="submit" id="kwon-submit01" class="btn btn-outline-success" value="책 등록하기"></input>
-                        <input type="reset" id="kwon-reset01" class="btn btn-outline-danger" value="취소하기"></input>
-                        <input type="button" id="kwon-back01" class="btn btn-outline-info" value="뒤로가기"></input>
+                        <input type="submit" id="kwon-submit01" class="genric-btn danger circle" style="font-size: 13px;" value="책 등록하기"></input>
+                        <input type="reset" id="kwon-reset01" class="genric-btn danger circle" style="font-size: 13px;" value="취소하기"></input>
+                        <input type="button" id="kwon-back01" class="genric-btn danger circle" style="font-size: 13px;" value="뒤로가기"></input>
                     </div>
                 </form>
 

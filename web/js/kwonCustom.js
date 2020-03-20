@@ -8,7 +8,7 @@ jQuery(function($){
         // 정렬 기능 숨기기
         ordering: true,
         // 정보 표시 숨기기
-        info: true,
+        info: false,
         // 페이징 기능 숨기기
         paging: true,
 
