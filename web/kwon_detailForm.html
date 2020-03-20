@@ -5,7 +5,7 @@
    <!-- Required meta tags -->
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-   <title>Real_state || About</title>
+   <title>Book detail</title>
    <!-- Required meta tags -->
    <link rel="icon" href="img/favicon.png">
    <!-- Bootstrap CSS -->
@@ -49,7 +49,7 @@
          <div class="row">
             <div class="col-lg-12">
                <nav class="navbar navbar-expand-lg navbar-light">
-                  <a class="navbar-brand" href="index.html"> <img src="img/logo.png" alt="logo"> </a>
+                  <a class="navbar-brand" href="index.html"> <img src="img/doit_logo.png" alt="logo"> </a>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                      <span class="navbar-toggler-icon"></span>
@@ -110,7 +110,7 @@
    <!--::menu part end::-->
 
    <!--::project part start::-->
-   <section class="portfolio_area section-padding ">
+   <section class="about_part section-padding">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -121,27 +121,20 @@
                     <input type="hidden" name="userId" value="">
                     <input type="hidden" name="userName" value="">
                     <table border="1" class="kwon-table1" cellpadding="10px">
-                        <tr>
-                            <td colspan="1">
-                                <label value="">카테고리값</label>
-                            </td>
-                            <td class="th02" colspan="2">제목</td>
-                            <td class="td02" colspan="3">
-                                <input type="text" name="title" class="tdin02" value="제목값" disabled>
-                            </td>
-                        </tr>
+                      
                         <tr>
                             <td class="th02">지역</td>
                             <td colspan="2"><input type="text" name="location" value="지역값" disabled></td>
-                            <td class="th02 th03" colspan="1">그 외</td>
-                            <td colspan="2"><input type="text" name="#" value="넣을거" readonly></td>
+                            <td class="th02 th03" colspan="1">분류</td>
+                            <td colspan="2"><label value="">카테고리값</label></td>
                         </tr>
                         <tr>
-                            <td class="th02">그 외</td>
-                            <td colspan="2"><input type="text" name="#" value="넣을거" readonly></td>
-                            <td class="th02 th03" colspan="1">그 외</td>
-                            <td colspan="2"><input type="text" name="#" value="넣을거" readonly></td>
-                        </tr>
+         
+                           <td class="th02" colspan="1">제목</td>
+                           <td class="td02" colspan="4">
+                               <input type="text" name="title" class="tdin02" value="제목값" disabled>
+                           </td>
+                       </tr>
                         <tr>
                             <td colspan="6" class="td-img01">
                                 <div> <img class="img01" src="img/sample.jpg" alt="sample.jpg"></div>
@@ -154,8 +147,8 @@
                     
                     <div style="text-align:center;">
 
-                        <input type="button" id="kwon-btn02" class="btn btn-outline-success" value="수정하기"></input>
-                        <input type="button" id="kwon-back01" class="btn btn-outline-info" value="돌아가기"></input>
+                        <input type="button" id="kwon-btn02" class="genric-btn danger circle" style="font-size: 13px;" value="수정하기"></input>
+                        <input type="button" id="kwon-back01" class="genric-btn danger circle" style="font-size: 13px;" value="돌아가기"></input>
                     </div>
                     로그인 체크해서 id값이 같은 사람만 수정할 수 있도록 js를 바꿔야 함
                 </form>
@@ -178,7 +171,6 @@
                                          <a href="#">홍길동</a>
                                       </h5>
                                       <p class="date">2020년 3월 14일, 오후 2:40 </p>
-                                      <p class="date"><i class="far fa-heart"></i> 3</p>
                                    </div>
                                 </div>
                                 <p class="comment">
@@ -202,7 +194,6 @@
                                          <a href="#">김길동</a>
                                       </h5>
                                       <p class="date">2020년 3월 14일, 오후 2:41 </p>
-                                      <p class="date"><i class="far fa-heart"></i> 3</p>
                                    </div>
                                 </div>
                                 <p class="comment">
@@ -226,7 +217,6 @@
                                          <a href="#">박길동</a>
                                       </h5>
                                       <p class="date">2020년 3월 14일, 오후 2:42 </p>
-                                      <p class="date"><i class="far fa-heart"></i> 3</p>
                                    </div>
                                 </div>
                                 <p class="comment">
@@ -244,12 +234,12 @@
                           <div class="col-10">
                              <div class="form-group">
                                 <textarea class="form-control w-100 placeholder hide-on-focus" name="comment" id="comment"
-                                   cols="30" rows="9" placeholder="댓글을 입력해 주세요."></textarea>
+                                   cols="30" rows="5" placeholder="댓글을 입력해 주세요."></textarea>
                              </div>
                           </div>
-                          <div class="col-2" style="margin-top: 76px;">
+                          <div class="col-2" style="margin-top: 40px;">
                              <div class="form-group">
-                                <button type="submit" class="button button-contactForm">등록</button>
+                                <button type="submit" class="genric-btn danger radius" style="font-size:13px;">등록</button>
                              </div>
                           </div>
                        </div>
